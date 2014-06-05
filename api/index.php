@@ -9,5 +9,14 @@
  * If no 'if' clause is triggered, the 'else' will be triggered which
  * will display info about how to use the api. The 'else' will also
  * check if invalid 'GET' variables have been set and will warn accordingly.
+ * 
+ * Before doing anything else, this script also checks if the user is logged
+ * in or not.
 */
+
+if (isset($_GET['userid'])) {
+}
+else {
+	header("Location: ../login");
+}
 ?>
