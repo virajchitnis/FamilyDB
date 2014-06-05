@@ -15,6 +15,7 @@
 */
 
 if (isset($_GET['userid'])) {
+	// Multiple if statements below will determine the operation performed.
 	if (true) {
 		
 	}
