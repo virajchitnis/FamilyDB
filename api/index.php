@@ -19,7 +19,11 @@ $objects;
 if (isset($_GET['userid'])) {
 	// Multiple if statements below will determine the operation performed.
 	if (isset($_GET['version'])) {
-		$objects = array('response' => true, 'version' => "alpha");
+		// Eventually, the version info will be retrieved from a file in the
+		// conf folder which will be updated by git after every push to 
+		// 'deploy'.
+		$version = "alpha";
+		$objects = array('response' => true, 'version' => $version);
 		echo json_encode($objects);
 	}
 	else {
@@ -30,11 +34,10 @@ if (isset($_GET['userid'])) {
 elseif (isset($_GET['username']) && isset($_GET['password'])) {
 	$username = $_GET['username'];
 	$password_hash = hash("md5", $_GET['password']);
-	/* Check if the username exists in the database and if the password
-	 * hash matches the stored hash, if it does not match, then return
-	 * false, if it does match, return true which will cause the user id
-	 * cookie to be set and the page to be redirected.
-	 */
+	// Check if the username exists in the database and if the password
+	// hash matches the stored hash, if it does not match, then return
+	// false, if it does match, return true which will cause the user id
+	// cookie to be set and the page to be redirected.
 }
 else {
 	header("Location: ../login");
