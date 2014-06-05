@@ -14,13 +14,17 @@
  * in or not.
 */
 
+$objects;
+
 if (isset($_GET['userid'])) {
 	// Multiple if statements below will determine the operation performed.
-	if (true) {
-		
+	if (isset($_GET['version'])) {
+		$objects = array('response' => true, 'version' => "alpha");
+		echo json_encode($objects);
 	}
 	else {
-		echo json_encode(array('response' => false));
+		$objects = array('response' => false);
+		echo json_encode($objects);
 	}
 }
 else {
