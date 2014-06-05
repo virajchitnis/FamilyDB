@@ -27,6 +27,15 @@ if (isset($_GET['userid'])) {
 		echo json_encode($objects);
 	}
 }
+elseif (isset($_GET['username']) && isset($_GET['password'])) {
+	$username = $_GET['username'];
+	$password_hash = hash("md5", $_GET['password']);
+	/* Check if the username exists in the database and if the password
+	 * hash matches the stored hash, if it does not match, then return
+	 * false, if it does match, return true which will cause the user id
+	 * cookie to be set and the page to be redirected.
+	 */
+}
 else {
 	header("Location: ../login");
 }
