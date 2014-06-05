@@ -15,6 +15,12 @@
 */
 
 if (isset($_GET['userid'])) {
+	if (true) {
+		
+	}
+	else {
+		echo json_encode(array('response' => false));
+	}
 }
 else {
 	header("Location: ../login");
