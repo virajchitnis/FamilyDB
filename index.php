@@ -7,7 +7,7 @@
 	<body>
 		<div class="wrapper">
 			<div class="header">
-				<h2 class="header_contents">User Name</h2>
+				<p class="header_contents"><b>User Name</b></p>
 				<p class="header_contents">Settings</p>
 				<p class="header_contents">Logout</p>
 			</div>

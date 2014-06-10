@@ -5,6 +5,7 @@
 html, body {
 	height: 100%;
 	overflow: hidden;
+	margin: 0;
 }
 .wrapper {
 	min-height: 100%;
@@ -21,6 +22,7 @@ html, body {
 }
 .header_contents {
 	display: inline-block;
+	margin-right: 10px;
 }
 .footer, .push {
 	height: 2em;
