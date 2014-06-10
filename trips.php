@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<?php include("common/variables.php"); ?>
 		<link rel="stylesheet" href="stylesheets/design.css">
-		<title>Trips - FamilyDB</title>
+		<title>Trips - <?php echo $app_name; ?></title>
 	</head>
 	<body>
 		<div class="wrapper">
