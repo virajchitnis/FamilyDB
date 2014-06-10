@@ -9,6 +9,7 @@
 			<?php include("common/header.php"); ?>
 			<div class="body_div">
 				<p><a href="trips">Trips</a></p>
+				<p>&nbsp;</p>
 				<p><a href="weight">Recorder</a></p>
 			</div>
 			<div class="push"></div>
