@@ -6,11 +6,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<div class="header">
-				<p class="header_contents"><b>User Name</b></p>
-				<p class="header_contents">Settings</p>
-				<p class="header_contents">Logout</p>
-			</div>
+			<?php include("common/header.php"); ?>
 			<div class="push"></div>
 		</div>
 		<?php include("common/footer.php"); ?>
