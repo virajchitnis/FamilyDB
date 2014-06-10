@@ -1,4 +1,3 @@
-// General design
 * {
 	margin: 0;
 }
@@ -32,7 +31,6 @@ html, body {
 	font-size: 8pt;
 }
 
-// Login page
 #login_box {
 	position: fixed;
 	top: calc(50% - 150px);
@@ -65,4 +63,10 @@ html, body {
 	font-size: 12pt;
 	color: white;
 	background-color: #2E64FE;
+}
+
+.body_div {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
